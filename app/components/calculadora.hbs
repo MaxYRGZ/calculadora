@@ -1,0 +1,10 @@
+
+<div class="calculadora">
+  <input type="number" value={{this.primerNumero}} {{on "input" this.actualizarPrimerNumero}}>
+  <input type="number" value={{this.segundoNumero}} {{on "input" this.actualizarSegundoNumero}}>
+  <button {{on "click" this.sumar}}>Sum</button>
+  <button {{on "click" this.restar}}>Rest</button>
+  <button {{on "click" this.mul}}>Mult</button>
+  <button {{on "click" this.div}}>Div</button>
+  <p>Resultado: {{ this.resultado}}</p>
+</div>
